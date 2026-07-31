@@ -121,7 +121,7 @@ export default function Home() {
               Visit Us
             </a>
             <a
-              href="https://www.swiggy.com/search?query=Venna%20Heritage%20Bangalore%20Dosa%20Cafe"
+              href="https://www.swiggy.com/city/hyderabad/venna-heritage-bangalore-dosa-cafe-manikonda-rest1382132"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#fc8019] text-white uppercase tracking-wide text-sm font-semibold px-7 py-3.5 rounded-full hover:brightness-95 transition"
