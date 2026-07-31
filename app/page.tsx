@@ -278,14 +278,24 @@ export default function Home() {
               </div>
             </div>
 
-            <a
-              href="https://www.google.com/search?sca_esv=e6f5da5899513930&sxsrf=APpeQnuGeXRlr4yQ1YvQLwFbsVg3fCe4eQ:1785473866597&q=venna-heritage+bangalore+dosa+cafe+hyderabad+address&ludocid=17528056419269476634&sa=X&ved=2ahUKEwiD2Mu8kPyVAxWTbmwGHYqfOM8Q6BN6BAgnEAI"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block mt-9 bg-venna-brown text-venna-ivory uppercase tracking-wide text-sm px-7 py-3.5 rounded-full hover:bg-venna-brownDark transition"
-            >
-              Get Directions
-            </a>
+            <div className="mt-9 flex flex-wrap gap-3">
+              <a
+                href="/franchise"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full border border-venna-brown px-7 py-3.5 text-sm uppercase tracking-wide text-venna-brown transition hover:bg-venna-brown hover:text-venna-ivory"
+              >
+                Own a Venna Outlet
+              </a>
+              <a
+                href="https://www.google.com/search?sca_esv=e6f5da5899513930&sxsrf=APpeQnuGeXRlr4yQ1YvQLwFbsVg3fCe4eQ:1785473866597&q=venna-heritage+bangalore+dosa+cafe+hyderabad+address&ludocid=17528056419269476634&sa=X&ved=2ahUKEwiD2Mu8kPyVAxWTbmwGHYqfOM8Q6BN6BAgnEAI"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full bg-venna-brown px-7 py-3.5 text-sm uppercase tracking-wide text-venna-ivory transition hover:bg-venna-brownDark"
+              >
+                Get Directions
+              </a>
+            </div>
           </div>
 
           <div className="rounded-2xl overflow-hidden shadow-xl min-h-[360px]">

@@ -1,16 +1,19 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 const links = [
-  { href: "#menu", label: "Menu" },
-  { href: "#story", label: "Our Story" },
-  { href: "#gallery", label: "Gallery" },
-  { href: "#visit", label: "Visit Us" },
+  { href: "/#menu", label: "Menu" },
+  { href: "/#story", label: "Our Story" },
+  { href: "/#gallery", label: "Gallery" },
+  { href: "/#visit", label: "Visit Us" },
 ];
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+  const isFranchisePage = pathname === "/franchise";
 
   return (
     <header className="sticky top-0 z-50 bg-venna-ivory/95 backdrop-blur border-b border-venna-brown/15">
@@ -24,7 +27,7 @@ export default function Header() {
           </span>
         </a>
 
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden lg:flex items-center gap-7">
           {links.map((l) => (
             <a
               key={l.href}
@@ -34,18 +37,30 @@ export default function Header() {
               {l.label}
             </a>
           ))}
-          <a
-            href="https://www.google.com/search?sca_esv=e6f5da5899513930&sxsrf=APpeQnuGeXRlr4yQ1YvQLwFbsVg3fCe4eQ:1785473866597&q=venna-heritage+bangalore+dosa+cafe+hyderabad+address&ludocid=17528056419269476634&sa=X&ved=2ahUKEwiD2Mu8kPyVAxWTbmwGHYqfOM8Q6BN6BAgnEAI"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-venna-brown text-venna-ivory text-sm uppercase tracking-wide px-5 py-2.5 rounded-full hover:bg-venna-brownDark transition-colors"
-          >
-            Get Directions
-          </a>
+          <div className="flex items-center gap-2.5">
+            {!isFranchisePage && (
+              <a
+                href="/franchise"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full border border-venna-brown px-5 py-2.5 text-sm uppercase tracking-wide text-venna-brown transition-colors hover:bg-venna-brown hover:text-venna-ivory"
+              >
+                Own a Venna Outlet
+              </a>
+            )}
+            <a
+              href="https://www.google.com/search?sca_esv=e6f5da5899513930&sxsrf=APpeQnuGeXRlr4yQ1YvQLwFbsVg3fCe4eQ:1785473866597&q=venna-heritage+bangalore+dosa+cafe+hyderabad+address&ludocid=17528056419269476634&sa=X&ved=2ahUKEwiD2Mu8kPyVAxWTbmwGHYqfOM8Q6BN6BAgnEAI"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-venna-brown text-venna-ivory text-sm uppercase tracking-wide px-5 py-2.5 rounded-full hover:bg-venna-brownDark transition-colors"
+            >
+              Get Directions
+            </a>
+          </div>
         </nav>
 
         <button
-          className="md:hidden text-venna-espresso"
+          className="lg:hidden text-venna-espresso"
           aria-label="Toggle menu"
           onClick={() => setOpen(!open)}
         >
@@ -61,7 +76,7 @@ export default function Header() {
       </div>
 
       {open && (
-        <div className="md:hidden border-t border-venna-brown/15 bg-venna-ivory px-5 py-4 flex flex-col gap-4">
+        <div className="lg:hidden border-t border-venna-brown/15 bg-venna-ivory px-5 py-4 flex flex-col gap-4">
           {links.map((l) => (
             <a
               key={l.href}
@@ -72,6 +87,17 @@ export default function Header() {
               {l.label}
             </a>
           ))}
+          {!isFranchisePage && (
+            <a
+              href="/franchise"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setOpen(false)}
+              className="text-sm uppercase tracking-wide text-venna-espresso"
+            >
+              Own a Venna Outlet
+            </a>
+          )}
         </div>
       )}
     </header>
