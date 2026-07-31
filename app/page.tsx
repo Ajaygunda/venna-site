@@ -1,4 +1,5 @@
 import Header from "./Header";
+import DeliveryLink from "./DeliveryLink";
 
 type Item = { name: string };
 
@@ -120,24 +121,22 @@ export default function Home() {
             >
               Visit Us
             </a>
-            <a
-              href="https://www.swiggy.com/city/hyderabad/venna-heritage-bangalore-dosa-cafe-manikonda-rest1382132"
-              target="_blank"
-              rel="noopener noreferrer"
+            <DeliveryLink
+              webUrl="https://www.swiggy.com/city/hyderabad/venna-heritage-bangalore-dosa-cafe-manikonda-rest1382132"
+              appPackage="in.swiggy.android"
               className="bg-[#fc8019] text-white uppercase tracking-wide text-sm font-semibold px-7 py-3.5 rounded-full hover:brightness-95 transition"
-              aria-label="Order Venna on Swiggy"
+              label="Order Venna on Swiggy"
             >
               Swiggy
-            </a>
-            <a
-              href="https://www.zomato.com/hyderabad/restaurants?q=Venna%20Heritage%20Bangalore%20Dosa%20Cafe"
-              target="_blank"
-              rel="noopener noreferrer"
+            </DeliveryLink>
+            <DeliveryLink
+              webUrl="https://www.zomato.com/hyderabad/restaurants?q=Venna%20Heritage%20Bangalore%20Dosa%20Cafe"
+              appPackage="com.application.zomato"
               className="bg-[#e23744] text-white uppercase tracking-wide text-sm font-semibold px-7 py-3.5 rounded-full hover:brightness-95 transition"
-              aria-label="Order Venna on Zomato"
+              label="Order Venna on Zomato"
             >
               Zomato
-            </a>
+            </DeliveryLink>
           </div>
         </div>
       </section>
