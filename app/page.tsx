@@ -130,7 +130,7 @@ export default function Home() {
               Swiggy
             </DeliveryLink>
             <DeliveryLink
-              webUrl="https://www.zomato.com/hyderabad/restaurants?q=Venna%20Heritage%20Bangalore%20Dosa%20Cafe"
+              webUrl="https://www.zomato.com/hyderabad/venna-heritage-bangalore-dosa-cafe-manikonda/order"
               appPackage="com.application.zomato"
               className="bg-[#e23744] text-white uppercase tracking-wide text-sm font-semibold px-7 py-3.5 rounded-full hover:brightness-95 transition"
               label="Order Venna on Zomato"
