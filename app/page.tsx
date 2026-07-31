@@ -110,9 +110,9 @@ export default function Home() {
           <h1 className="font-serif text-5xl md:text-7xl max-w-2xl leading-[1.05]">
             A piece of Bangalore, in the heart of Hyderabad.
           </h1>
-          <p className="mt-6 max-w-xl text-venna-ivory/90 text-lg">
-            Golden, buttery, crispy heritage dosas and aromatic filter coffee —
-            served the way we grew up loving them.
+          <p className="mt-6 max-w-lg border-l border-venna-marigold/70 pl-4 text-lg leading-relaxed text-venna-ivory/90 lg:max-w-2xl">
+            <span className="block lg:whitespace-nowrap">Golden, buttery, crispy heritage dosas and aromatic filter coffee.</span>
+            <span className="mt-1 block text-venna-ivory/75">Just the way we grew up loving them.</span>
           </p>
           <div className="mt-9 flex flex-wrap gap-4">
             <a
