@@ -20,7 +20,6 @@ exact filenames — they map to the photos you shared:
 | Filename | Photo |
 |---|---|
 | dosa-hero.webp | the plated dosa with garlic, on the wood table |
-| storefront.webp | the "venna" storefront signage with marigold garlands |
 | idli-plate.webp | idli plate with the glass water bottle |
 | interior.webp | the café interior with pendant lights |
 | idli-closeup.webp | the close-up tilted idli plate shot |

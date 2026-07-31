@@ -195,14 +195,6 @@ export default function Home() {
           <h2 className="font-serif text-4xl text-venna-espresso">A little taste of Venna</h2>
         </div>
         <div className="grid auto-rows-[150px] grid-cols-2 gap-3 md:auto-rows-[220px] md:grid-cols-12 md:gap-4">
-          <figure className="group relative col-span-2 overflow-hidden rounded-lg md:col-span-12">
-            <img
-              src="/images/storefront.webp"
-              alt="Venna Heritage Bangalore Dosa Cafe storefront"
-              className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.02]"
-              loading="lazy"
-            />
-          </figure>
           <figure className="group relative col-span-2 row-span-2 overflow-hidden rounded-lg md:col-span-4">
             <img
               src="/images/podi-thatte-idli.jpg"
