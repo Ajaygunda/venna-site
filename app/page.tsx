@@ -96,11 +96,17 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-gradient-to-r from-venna-espresso/90 via-venna-espresso/55 to-venna-espresso/10" />
         <div className="absolute inset-0 bg-gradient-to-t from-venna-espresso/80 via-transparent to-venna-espresso/10" />
-        <div className="relative max-w-6xl mx-auto px-5 pb-20 pt-32 text-venna-ivory">
-          <p className="font-serif text-5xl lowercase leading-none text-venna-ivory md:text-7xl">venna</p>
-          <p className="mt-3 uppercase tracking-[0.3em] text-sm text-venna-marigold mb-5">
-            వెన్న &nbsp;·&nbsp; वेन्ना
-          </p>
+        <div className="relative max-w-6xl mx-auto px-5 pb-32 pt-32 text-venna-ivory">
+          <div className="mb-6 flex w-fit flex-col items-center">
+            <p className="font-serif text-5xl lowercase leading-none text-venna-ivory md:text-7xl">venna</p>
+            <div className="mt-4 flex items-center gap-3 text-venna-marigold">
+              <span aria-hidden="true" className="h-px w-7 bg-current opacity-70" />
+              <p className="text-center text-sm uppercase tracking-[0.3em]">
+                వెన్న &nbsp;·&nbsp; वेन्ना
+              </p>
+              <span aria-hidden="true" className="h-px w-7 bg-current opacity-70" />
+            </div>
+          </div>
           <h1 className="font-serif text-5xl md:text-7xl max-w-2xl leading-[1.05]">
             A piece of Bangalore, in the heart of Hyderabad.
           </h1>
